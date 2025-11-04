@@ -29,7 +29,7 @@ model = genai.GenerativeModel('gemini-2.5-flash')
 
 # --- 2. CONFIGURACIÓN DE BASE DE DATOS (SQLAlchemy) ---
 # Usará el "sqlite:///./local.db" de tu .env
-engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
