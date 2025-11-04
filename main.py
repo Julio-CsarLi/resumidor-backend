@@ -86,7 +86,7 @@ origins = [
     "http://localhost:5500",
     "http://127.0.0.1:8000", # Para tu config.js local
     "null", # Para cuando abres el .html directamente
-    # "https://tu-usuario.github.io" # ¡AÑADE ESTA LÍNEA CUANDO DESPLIEGUES!
+    "https://julio-csarli.github.io"
 ]
 app.add_middleware(
     CORSMiddleware,
